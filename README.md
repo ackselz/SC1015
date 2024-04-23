@@ -1,18 +1,20 @@
 # Hotel Booking Cancellation Prediction
 
+[Presentation Video]()
+
 ## Overview
 This is a Mini-Project for SC1015 (Introduction to Data Science and Artificial Intelligence). This project aims to investigate the likelihood of a hotel booking cancellation using a dataset of hotel bookings. The project involves exploratory data analysis (EDA), data preprocessing, and the training of various machine learning models to predict booking cancellations. The models employed include logistic regression, K-nearest neighbors (KNN), AutoML, and neural networks.
 
 ## Data
-The dataset used in this project contains information about hotel bookings, including details such as reservation status (cancelled or not cancelled), lead time, arrival date, number of nights booked, number of people, meal plan, country of origin, and other relevant features. The dataset is not included in this repository due to privacy concerns, but it can be obtained from [Source](https://www.kaggle.com/datasets/ahsan81/hotel-reservations-classification-dataset).
+The dataset used in this project contains information about hotel bookings, including details such as reservation status (cancelled or not cancelled), lead time, arrival date, number of nights booked, number of people, meal plan, country of origin, and other relevant features. The dataset is not included in this repository due to privacy concerns, but it can be obtained from [the source](https://www.kaggle.com/datasets/ahsan81/hotel-reservations-classification-dataset).
 
 ## Contributors
-- @ackselz: Logistic Regression, KNN, AutoML, Neural Network
-- @Pavperera: Data Visualization, Data Extraction
+- @ackselz: K-Nearest Neighbours, AutoML, Random Forest, Neural Network
+- @Pavperera: Data Extraction, Data Visualization, Data Resampling, Logistic Regression
 
 ## Problem Definition
-How do different variables affect the probability of a hotel booking being cancelled?
-Are we able to predict which hotel bookings will likely be cancelled?
+- How do different variables affect the probability of a hotel booking being cancelled?
+- Are we able to predict which hotel bookings will likely be cancelled?
 
 ## Exploratory Data Analysis
 Univariate, Bivariate, and Multivariate Visualization and analysis were used to determine the relationships between each variable and a booking being cancelled. 
@@ -21,9 +23,31 @@ Univariate, Bivariate, and Multivariate Visualization and analysis were used to 
 
 ## Models Used
 - Logistic Regression
-- K Nearest Neighbours (KNN)
+- K-Nearest Neighbours (KNN)
+- AutoML ([tpot](https://epistasislab.github.io/tpot/)) -> Random Forest
 - Neural Network
-(add more on the results)
+
+*(descending accuracy)*
+
+| Model | Accuracy Score | F1 score | Precision | Recall |
+| ---| ---| ---| --- | --- |
+| Random Forest | 0.900320 | 0.927652 | 0.908905 | 0.946981 |
+| Logistic Regression | 0.806925 | 0.862526 | 0.829007 | 0.898871 |
+| K-Nearest Neighbors | 0.806814 | 0.861699 | 0.832393 | 0.893144 |
+| Neural Network | 0.770537 | 0.824373 | 0.851168 | 0.799215 |
 
 ## Conclusion
-(To insert)
+- features with low correlation
+- features with high correlation
+- resampling
+- log reg
+- knn
+- random forest
+- neural network
+- Yes, we are able to predict which hotel bookings will be cancelled with a high degree of accuracy and precision. 
+
+## Takeaways
+
+
+## References
+- https://github.com/nicklimmm/movie-analysis
