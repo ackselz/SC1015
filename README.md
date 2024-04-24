@@ -27,14 +27,39 @@ Univariate, Bivariate, and Multivariate Visualization and analysis were used to 
 - AutoML ([tpot](https://epistasislab.github.io/tpot/)) -> Random Forest
 - Neural Network
 
-*(descending accuracy)*
+
+### Original Dataset
+
+*(descending Precision)*
+
+| Modal | Accuracy Score | F1 score | Precision | Recall |
+|-------|-----------------|----------|-----------|--------|
+|Random Forest|0.900430|0.927673|0.908535|0.947635|
+|Neural Network|0.782115|0.833558|0.858879|0.809687|
+|K-Nearest Neighbors|0.806814|0.861699|0.832393|0.893144|
+|Logistic Regression|0.806925|0.862526|0.829007|0.898871|
+
+### Dataset with Random Oversampling
+
+*(descending Precision)*
 
 | Model | Accuracy Score | F1 score | Precision | Recall |
-| ---| ---| ---| --- | --- |
-| Random Forest | 0.900320 | 0.927652 | 0.908905 | 0.946981 |
-| Logistic Regression | 0.806925 | 0.862526 | 0.829007 | 0.898871 |
-| K-Nearest Neighbors | 0.806814 | 0.861699 | 0.832393 | 0.893144 |
-| Neural Network | 0.770537 | 0.824373 | 0.851168 | 0.799215 |
+|-------|-----------------|----------|-----------|--------|
+|Random Forest|0.920541|0.922856|0.901820|0.944897|
+|Logistic Regression|0.817958|0.821342|0.811030|0.831920|
+|K-Nearest Neighbors|0.791226|0.802605|0.765228|0.843821|
+|Neural Network|0.784420|0.814611|0.717783|0.941637|
+
+### Dataset with SMOTE
+
+*(descending Precision)*
+
+| Model | Accuracy Score | F1 score | Precision | Recall |
+|-------|-----------------|----------|-----------|--------|
+|Random Forest|0.919065|0.921461|0.900047|0.943919|
+|Logistic Regression|0.821976|0.825496|0.814175|0.837137|
+|Neural Network|0.822140|0.839393|0.768959|0.924030|
+|K-Nearest Neighbors|0.791226|0.802605|0.765228|0.843821|
 
 ## Conclusion
 - features with low correlation
