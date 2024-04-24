@@ -1,6 +1,6 @@
 # Hotel Booking Cancellation Prediction
 
-[Presentation Video]()
+[Presentation Video](https://www.youtube.com/watch?v=UICKs8zISyc)
 
 ## Overview
 This is a Mini-Project for SC1015 (Introduction to Data Science and Artificial Intelligence). This project aims to investigate the likelihood of a hotel booking cancellation using a dataset of hotel bookings. The project involves exploratory data analysis (EDA), data preprocessing, and the training of various machine learning models to predict booking cancellations. The models employed include logistic regression, K-nearest neighbors (KNN), AutoML, and neural networks.
