@@ -6,7 +6,7 @@
 This is a Mini-Project for SC1015 (Introduction to Data Science and Artificial Intelligence). This project aims to investigate the likelihood of a hotel booking cancellation using a dataset of hotel bookings. The project involves exploratory data analysis (EDA), data preprocessing, and the training of various machine learning models to predict booking cancellations. The models employed include logistic regression, K-nearest neighbors (KNN), AutoML, and neural networks.
 
 ## Data
-The dataset used in this project contains information about hotel bookings, including details such as reservation status (cancelled or not cancelled), lead time, arrival date, number of nights booked, number of people, meal plan, country of origin, and other relevant features. The dataset is not included in this repository due to privacy concerns, but it can be obtained from [the source](https://www.kaggle.com/datasets/ahsan81/hotel-reservations-classification-dataset).
+The dataset used in this project contains information about hotel bookings, including details such as reservation status (cancelled or not cancelled), lead time, arrival date, number of nights booked, number of people, meal plan, country of origin, and other relevant features. The dataset is obtained from [the source](https://www.kaggle.com/datasets/ahsan81/hotel-reservations-classification-dataset).
 
 ## Contributors
 - @ackselz: K-Nearest Neighbours, AutoML, Random Forest, Neural Network
@@ -62,17 +62,16 @@ Univariate, Bivariate, and Multivariate Visualization and analysis were used to 
 |K-Nearest Neighbors|0.791226|0.802605|0.765228|0.843821|
 
 ## Conclusion
-- features with low correlation
-- features with high correlation
-- resampling
-- log reg
-- knn
-- random forest
-- neural network
-- Yes, we are able to predict which hotel bookings will be cancelled with a high degree of accuracy and precision. 
+**Yes, we are able to predict which hotel bookings will be cancelled with a high degree of accuracy and precision.**
+- Lead Time has a moderate positive correlation with cancellation rate. A longer lead time increases likelihood of booking being cancelled.
+- Bookings made with a higher price also has a slightly higher likelihood of being cancelled.
+- A tuned random forest model is the best at predicting which hotel bookings will be cancelled (Accuracy = 0.9, Precision = 0.91).
+
+**Hotels can consider implementing some strategies to reduce/react to cancellations.**
+- Implement higher cancellation fees for bookings made earlier in advance. Especially, if price of booking was higher than on average.
+- Use the Random Forest Model to predict which bookings will be cancelled with 90% precision and account for cancellations by overbooking rooms (to ensure 100% occupancy)
 
 ## Takeaways
+- Oversampling of data does not necessarily improve model results, despite original dataset having a high imbalance.
+- AutoML performs extremely well to identify the model that performs the best. 
 
-
-## References
-- https://github.com/nicklimmm/movie-analysis
