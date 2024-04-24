@@ -62,17 +62,15 @@ Univariate, Bivariate, and Multivariate Visualization and analysis were used to 
 |K-Nearest Neighbors|0.791226|0.802605|0.765228|0.843821|
 
 ## Conclusion
-- features with low correlation
-- features with high correlation
-- resampling
-- log reg
-- knn
-- random forest
-- neural network
-- Yes, we are able to predict which hotel bookings will be cancelled with a high degree of accuracy and precision. 
+**Yes, we are able to predict which hotel bookings will be cancelled with a high degree of accuracy and precision. 
+**
+- Lead Time has a moderate positive correlation with cancellation rate. A longer lead time increases likelihood of booking being cancelled.
+- Bookings made with a higher price also has a slightly higher likelihood of being cancelled.
+- A tuned random forest model is the best at predicted which hotel bookings will be cancelled. (Accuracy = 0.9, Precision = 0.91)
 
 ## Takeaways
-
+- Oversampling of data does not necessarily improve model results, despite original dataset having a high imbalance.
+- AutoML performs extremely well to identify the model that performs the best. 
 
 ## References
 - https://github.com/nicklimmm/movie-analysis
