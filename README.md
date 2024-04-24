@@ -6,7 +6,7 @@
 This is a Mini-Project for SC1015 (Introduction to Data Science and Artificial Intelligence). This project aims to investigate the likelihood of a hotel booking cancellation using a dataset of hotel bookings. The project involves exploratory data analysis (EDA), data preprocessing, and the training of various machine learning models to predict booking cancellations. The models employed include logistic regression, K-nearest neighbors (KNN), AutoML, and neural networks.
 
 ## Data
-The dataset used in this project contains information about hotel bookings, including details such as reservation status (cancelled or not cancelled), lead time, arrival date, number of nights booked, number of people, meal plan, country of origin, and other relevant features. The dataset is not included in this repository due to privacy concerns, but it can be obtained from [the source](https://www.kaggle.com/datasets/ahsan81/hotel-reservations-classification-dataset).
+The dataset used in this project contains information about hotel bookings, including details such as reservation status (cancelled or not cancelled), lead time, arrival date, number of nights booked, number of people, meal plan, country of origin, and other relevant features. The dataset is obtained from [the source](https://www.kaggle.com/datasets/ahsan81/hotel-reservations-classification-dataset).
 
 ## Contributors
 - @ackselz: K-Nearest Neighbours, AutoML, Random Forest, Neural Network
